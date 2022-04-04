@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d79b8ea0-4f5e-4047-ac01-a984ec2524e4" name="Changes" comment="did monte carlo pi approximation">
+    <list default="true" id="d79b8ea0-4f5e-4047-ac01-a984ec2524e4" name="Changes" comment="pi circle much better visualization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi_circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_circle.py" afterDir="false" />
     </list>
@@ -186,7 +186,7 @@
       <updated>1649026468552</updated>
       <workItem from="1649026470409" duration="4125000" />
       <workItem from="1649039311785" duration="8346000" />
-      <workItem from="1649095614374" duration="1745000" />
+      <workItem from="1649095614374" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="clean code">
       <created>1649042016206</created>
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649047745263</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pi circle much better visualization">
+      <created>1649097442059</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649097442060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,11 +253,12 @@
     <MESSAGE value="cosine maclaurin series" />
     <MESSAGE value="added e^(2x) program" />
     <MESSAGE value="did monte carlo pi approximation" />
-    <option name="LAST_COMMIT_MESSAGE" value="did monte carlo pi approximation" />
+    <MESSAGE value="pi circle much better visualization" />
+    <option name="LAST_COMMIT_MESSAGE" value="pi circle much better visualization" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/calculus$maclaurin.coverage" NAME="maclaurin Coverage Results" MODIFIED="1649041959120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/calculus$pi_circle.coverage" NAME="pi_circle Coverage Results" MODIFIED="1649097382389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$pi_circle.coverage" NAME="pi_circle Coverage Results" MODIFIED="1649097799677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_cos.coverage" NAME="maclaurin_cos Coverage Results" MODIFIED="1649044297618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_e2x.coverage" NAME="maclaurin_e2x Coverage Results" MODIFIED="1649046174696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$taylor.coverage" NAME="taylor Coverage Results" MODIFIED="1649040908766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
