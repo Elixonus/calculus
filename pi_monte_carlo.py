@@ -28,7 +28,7 @@ ratio = len(points_inside) / (len(points_inside) + len(points_outside))
 pi_approx = 4 * ratio
 
 fig, ax = plt.subplots()
-ax.add_patch(plt.Rectangle((-1, -1), 2, 2, color="green", alpha=0.2, hatch="x"))
+ax.add_patch(plt.Rectangle((-1, -1), 2, 2, color="green", alpha=0.2))
 ax.add_patch(plt.Circle((0, 0), 1, color="red", alpha=0.2, hatch="x"))
 ax.scatter([p[0] for p in points_inside], [p[1] for p in points_inside], color="red")
 ax.scatter([p[0] for p in points_outside], [p[1] for p in points_outside], color="green")
