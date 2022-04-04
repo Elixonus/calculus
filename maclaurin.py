@@ -1,5 +1,4 @@
-from math import pi, tau
-from typing import TypeAlias, Callable
+from typing import Callable
 
 
 def factorial(n) -> int:
@@ -33,9 +32,9 @@ class Polynomial:
         self.terms = terms
 
     def __repr__(self) -> str:
-        string = ""
-        for term in self.terms:
-            string += str(term) + " "
+        string = str(self.terms[0])[2:]
+        for term in self.terms[1:]:
+            string += " " + str(term)
         return string
 
     def evaluate(self, x: float) -> float:
@@ -50,10 +49,9 @@ class Maclaurin:
 
     def polynomial(self, degree: int) -> Polynomial:
         terms: list[Monomial] = []
-        for n in range(degree, -1, -1):
+        for n in reversed(range(0, degree + 1)):
             terms.append(Monomial(n, self.nth_derivative(n) / factorial(n)))
         return Polynomial(terms)
-
 
 
 def nth_derivative_sin_0(n: int) -> float:
@@ -68,5 +66,9 @@ def nth_derivative_sin_0(n: int) -> float:
         return -1
 
 
-maclaurin = Maclaurin(nth_derivative_sin_0)
-print(maclaurin.polynomial(100))
+def nth_derivative_cos_0(n: int) -> float:
+    # assumes n >= 0
+    return nth_derivative_sin_0(n + 1)
+
+if __name__ == "__main__":
+    print("This is just a library, you might wanna try the other files.")
