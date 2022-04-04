@@ -31,7 +31,7 @@ for i in range(len(x)):
 
 fig, ax = plt.subplots()
 ax.plot(x, y, linewidth=3)
-ax.plot(x, y_maclaurin, linewidth=3)
+ax.plot(x, y_maclaurin, linewidth=3, color="green")
 ax.legend(["e^(2x)", f"Maclaurin Series {degree}th degree"])
 ax.fill_between(x, y, y_maclaurin, alpha=0.3)
 plt.xlim((0, 2))
