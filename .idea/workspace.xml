@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d79b8ea0-4f5e-4047-ac01-a984ec2524e4" name="Changes" comment="pi circle much better visualization">
+    <list default="true" id="d79b8ea0-4f5e-4047-ac01-a984ec2524e4" name="Changes" comment="finished pi circle program inputting">
+      <change afterPath="$PROJECT_DIR$/pi_maclaurin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pi_circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_monte_carlo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -46,18 +58,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pi_circle.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pi_maclaurin.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\daxon\Documents\GitHub\calculus" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pi_circle">
+  <component name="RunManager" selected="Python.pi_maclaurin">
     <configuration name="maclaurin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="calculus" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,7 +159,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pi_circle" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="pi_maclaurin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="calculus" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,7 +172,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_circle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_maclaurin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pi_monte_carlo" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="calculus" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_monte_carlo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,8 +207,9 @@
       <item itemvalue="Python.maclaurin" />
       <item itemvalue="Python.maclaurin_cosx" />
       <item itemvalue="Python.maclaurin_e2x" />
-      <item itemvalue="Python.pi_circle" />
       <item itemvalue="Python.maclaurin_sinx" />
+      <item itemvalue="Python.pi_monte_carlo" />
+      <item itemvalue="Python.pi_maclaurin" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -186,7 +222,8 @@
       <updated>1649026468552</updated>
       <workItem from="1649026470409" duration="4125000" />
       <workItem from="1649039311785" duration="8346000" />
-      <workItem from="1649095614374" duration="2137000" />
+      <workItem from="1649095614374" duration="2192000" />
+      <workItem from="1649098032901" duration="2737000" />
     </task>
     <task id="LOCAL-00001" summary="clean code">
       <created>1649042016206</created>
@@ -230,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649097442060</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finished pi circle program inputting">
+      <created>1649097833586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649097833587</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,13 +298,15 @@
     <MESSAGE value="added e^(2x) program" />
     <MESSAGE value="did monte carlo pi approximation" />
     <MESSAGE value="pi circle much better visualization" />
-    <option name="LAST_COMMIT_MESSAGE" value="pi circle much better visualization" />
+    <MESSAGE value="finished pi circle program inputting" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished pi circle program inputting" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/calculus$maclaurin.coverage" NAME="maclaurin Coverage Results" MODIFIED="1649041959120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$pi_circle.coverage" NAME="pi_circle Coverage Results" MODIFIED="1649097799677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_cos.coverage" NAME="maclaurin_cos Coverage Results" MODIFIED="1649044297618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_e2x.coverage" NAME="maclaurin_e2x Coverage Results" MODIFIED="1649046174696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$pi_maclaurin.coverage" NAME="pi_maclaurin Coverage Results" MODIFIED="1649100701814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$taylor.coverage" NAME="taylor Coverage Results" MODIFIED="1649040908766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_1.coverage" NAME="maclaurin_sin Coverage Results" MODIFIED="1649044192366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
