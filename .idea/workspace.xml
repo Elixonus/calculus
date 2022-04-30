@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d79b8ea0-4f5e-4047-ac01-a984ec2524e4" name="Changes" comment="added numerical integration file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numerical_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/numerical_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maclaurin.py" beforeDir="false" afterPath="$PROJECT_DIR$/maclaurin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maclaurin_cosx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maclaurin_e2x.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maclaurin_sinx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/numerical_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_maclaurin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_monte_carlo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem_2008_bc_6.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/daxon/Documents/GitHub/calculus",
+    "last_opened_file_path": "C:/Users/elias_yszu6iy/Documents/GitHub/calculus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -274,6 +281,7 @@
       <workItem from="1649111138404" duration="361000" />
       <workItem from="1650037875676" duration="908000" />
       <workItem from="1650043393684" duration="1979000" />
+      <workItem from="1651349981847" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="clean code">
       <created>1649042016206</created>
@@ -360,14 +368,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="added numerical integration file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculus$problem_2008_bc_6.coverage" NAME="problem_2008_bc_6 Coverage Results" MODIFIED="1649111470997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/calculus$pi_circle.coverage" NAME="pi_circle Coverage Results" MODIFIED="1649097799677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$numerical_integration.coverage" NAME="numerical_integration Coverage Results" MODIFIED="1650044988290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/calculus$pi_maclaurin.coverage" NAME="pi_maclaurin Coverage Results" MODIFIED="1649100986309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_1.coverage" NAME="maclaurin_sin Coverage Results" MODIFIED="1649044192366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_e2x.coverage" NAME="maclaurin_e2x Coverage Results" MODIFIED="1649046174696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/calculus$maclaurin_sinx.coverage" NAME="maclaurin_sinx Coverage Results" MODIFIED="1649101775337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$pi_maclaurin.coverage" NAME="pi_maclaurin Coverage Results" MODIFIED="1649100986309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$taylor.coverage" NAME="taylor Coverage Results" MODIFIED="1649040908766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$problem_2008_bc_6.coverage" NAME="problem_2008_bc_6 Coverage Results" MODIFIED="1649111470997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$pi_circle.coverage" NAME="pi_circle Coverage Results" MODIFIED="1649097799677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculus$maclaurin_sinx.coverage" NAME="maclaurin_sinx Coverage Results" MODIFIED="1649101775337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin_cos.coverage" NAME="maclaurin_cos Coverage Results" MODIFIED="1649044297618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/calculus$maclaurin.coverage" NAME="maclaurin Coverage Results" MODIFIED="1649041959120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

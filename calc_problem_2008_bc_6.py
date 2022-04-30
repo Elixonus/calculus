@@ -4,7 +4,7 @@ from matplotlib.colors import Normalize
 
 while True:
     try:
-        do = int(input("Do: "))
+        do = int(input("Do [1-3]: "))
     except:
         print("Visualization number has to be either (1, 2, 3)")
         continue
