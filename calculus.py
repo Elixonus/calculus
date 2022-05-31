@@ -17,4 +17,16 @@ class Function:
         derivative = (y2 - y1) / (x2 - x1)
         return derivative
 
-    def derivative_left(self, x: float, d: ):
+    def derivative(self, xc: float, step: float) -> float:
+        x1 = xc - step / 2
+        x2 = xc + step / 2
+        derivative = self.derivative_range(x1, x2)
+        return derivative
+
+    def derivative_forward(self, xl: float, step: float) -> float:
+        derivative = self.derivative(xl + step / 2, step)
+        return derivative
+
+    def derivative_backward(self, xl: float, step: float) -> float:
+        derivative = self.derivative(xl - step / 2, step)
+        return derivative
