@@ -90,11 +90,20 @@ class Polynomial(Function):
             return y
         super().__init__(function)
 
-    def true_limit(self, x: float) -> None:
+    def true_limit(self, x: float) -> float:
         limit = self.value(x)
         return limit
 
-    def true_derivative(self, x: float) -> None:
+    def true_derivative(self, x: float) -> float:
         derivative = 0
         for power, coefficient in zip(self.powers, self.coefficients):
-            derivative += power * coefficient * x ** (power - 1)
+            derivative += (coefficient * power) * x ** (power - 1)
+        return derivative
+
+    def true_integral(self, x1: float, x2: float) -> float:
+        integral = 0
+        for power, coefficient in zip(self.powers, self.coefficients):
+            integral += (coefficient / power) * x2 ** (power + 1)
+        for power, coefficient in zip(self.powers, self.coefficients):
+            integral -= (coefficient / power) * x1 ** (power + 1)
+        return integral
