@@ -30,3 +30,12 @@ class Function:
     def derivative_backward(self, xl: float, step: float) -> float:
         derivative = self.derivative(xl - step / 2, step)
         return derivative
+
+    def integral_riemann_left(self, x1: float, x2: float, steps: int) -> float:
+        step = (x2 - x1) / steps
+        integral = 0
+        for n in range(steps):
+            x = x1 + n * step
+            y = self.value(x)
+            integral += y * step
+
