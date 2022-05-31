@@ -2,6 +2,8 @@ from __future__ import annotations
 from typing import Callable
 
 
+
+
 class Function:
     function: Callable[[float], float]
 
@@ -74,3 +76,25 @@ class Function:
             yr = self.value(xr)
             integral += (yl + yr) / 2
         return integral
+
+
+class Polynomial(Function):
+    powers: list[int]
+    coefficients: list[float]
+
+    def __init__(self, powers: list[int], coefficients: list[float]) -> None:
+        def function(x: float) -> float:
+            y = 0
+            for n in range(len(powers)):
+                y += coefficients[n] * x ** powers[n]
+            return y
+        super().__init__(function)
+
+    def true_limit(self, x: float) -> None:
+        limit = self.value(x)
+        return limit
+
+    def true_derivative(self, x: float) -> None:
+        derivative = 0
+        for power, coefficient in zip(self.powers, self.coefficients):
+            derivative += power * coefficient * x ** (power - 1)
