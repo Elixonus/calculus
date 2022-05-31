@@ -38,4 +38,14 @@ class Function:
             x = x1 + n * step
             y = self.value(x)
             integral += y * step
+        return integral
 
+    def integral_riemann_right(self, x1: float, x2: float, steps: int) -> float:
+        step = (x2 - x1) / steps
+        integral = self.integral_riemann_left(x1 + step, x2 + step, steps)
+        return integral
+
+    def integral_riemann_center(self, x1: float, x2: float, steps: int) -> float:
+        step = (x2 - x1) / steps
+        integral = self.integral_riemann_left(x1 + step / 2, x2 + step / 2, steps)
+        return integral
