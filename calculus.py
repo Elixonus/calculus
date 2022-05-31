@@ -11,6 +11,20 @@ class Function:
     def value(self, x: float) -> float:
         return self.function(x)
 
+    def limit_left(self, x: float, xl: float) -> float:
+        yl = self.value(xl)
+        for n in range(100):
+            try:
+                yl = self.value(xl + (x - xl) * ((n + 1) / 100))
+            except ValueError:
+                break
+        limit = yl
+        return limit
+
+    def limit_right(self, x: float, xr: float) -> float:
+        limit = self.limit_left(x, xr)
+        return limit
+
     def derivative_range(self, x1: float, x2: float) -> float:
         y1 = self.value(x1)
         y2 = self.value(x2)
