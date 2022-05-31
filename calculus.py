@@ -2,8 +2,6 @@ from __future__ import annotations
 from typing import Callable
 
 
-
-
 class Function:
     function: Callable[[float], float]
 
@@ -103,7 +101,11 @@ class Polynomial(Function):
     def true_integral(self, x1: float, x2: float) -> float:
         integral = 0
         for power, coefficient in zip(self.powers, self.coefficients):
-            integral += (coefficient / power) * x2 ** (power + 1)
-        for power, coefficient in zip(self.powers, self.coefficients):
-            integral -= (coefficient / power) * x1 ** (power + 1)
+            integral += (coefficient / power) * (x2 ** (power + 1) - x1 ** (power + 1))
         return integral
+
+
+if __name__ == "__main__":
+    from time import sleep
+    print("This is just a library, you might want to try the other files.")
+    sleep(5)

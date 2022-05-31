@@ -70,7 +70,8 @@ def nth_derivative_cos_0(n: int) -> float:
     # assumes n >= 0
     return nth_derivative_sin_0(n + 1)
 
+
 if __name__ == "__main__":
     from time import sleep
-    print("This is just a library, you might wanna try the other files.")
+    print("This is just a library, you might want to try the other files.")
     sleep(5)
