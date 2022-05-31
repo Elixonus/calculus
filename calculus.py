@@ -49,3 +49,14 @@ class Function:
         step = (x2 - x1) / steps
         integral = self.integral_riemann_left(x1 + step / 2, x2 + step / 2, steps)
         return integral
+
+    def integral_trapezoid(self, x1: float, x2: float, steps: int) -> float:
+        step = (x2 - x1) / steps
+        integral = 0
+        for n in range(steps):
+            xl = x1 + n * step
+            xr = x1 + (n + 1) * step
+            yl = self.value(xl)
+            yr = self.value(xr)
+            integral += (yl + yr) / 2
+        return integral
